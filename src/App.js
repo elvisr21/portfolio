@@ -10,7 +10,7 @@ import {HomeComponent,ResumeComponent,WorkExperienceComponent,SchoolProjectsComp
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Router>
           {/* navigation component */}
           <NavComponent/>
@@ -26,7 +26,7 @@ function App() {
               {/* contact page */}
           </Switch>
       </Router> 
-    </div>
+    </>
   );
 }
 
