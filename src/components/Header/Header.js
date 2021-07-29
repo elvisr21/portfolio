@@ -4,12 +4,14 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons,Span } from './HeaderStyles';
+import { Socialdata } from '../../constants/constants';
+
 
 const Header = () =>  (
   <Container>
         <Div1>
             <Link href="/">
-                  <a style={{display:"flex",alignItems:"center",color:"white", marginBottom:"20;"}}>
+                  <a style={{display:"flex",alignItems:"center",color:"white", marginBottom:"20"}}>
                       <DiCssdeck size="3rem"/> <Span>Porfolio</Span>
                   </a>
             </Link>
@@ -28,12 +30,11 @@ const Header = () =>  (
             </li>
         </Div2>
         <Div3>
-          <SocialIcons href= "https://github.com/elvisr21">
-              <AiFillGithub size="3rem"/>
-          </SocialIcons>
-          <SocialIcons href= "https://linkedin.com/in/elvisr21">
-              <AiFillLinkedin size="3rem"/>
-          </SocialIcons>
+          {Socialdata.map((item,index)=>(
+              <SocialIcons href={item.link} key={index}>
+                  {item.icon}
+              </SocialIcons>
+          ))}
         </Div3>
   </Container>
 );

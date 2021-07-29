@@ -2,6 +2,7 @@ import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { Technologiesdata } from '../../constants/constants';
 
 const Technologies = () =>  (
   <Section id="tech">
@@ -12,36 +13,15 @@ const Technologies = () =>  (
           I've worked with a range of technologies in the development world. From Back-end to Design 
       </SectionText>
       <List>
-          <ListItem>
-            <DiFirebase size="3rem"/>
-            <ListContainer>
-                <ListTitle>Frontend</ListTitle>
-                <ListParagraph>
-                  Experience with <br/>
-                  React.js
-                </ListParagraph>
-            </ListContainer>
-          </ListItem>
-          <ListItem>
-            <DiZend size="3rem"/>
-            <ListContainer>
-                <ListTitle>UI/UX</ListTitle>
-                <ListParagraph>
-                  Experience with <br/>
-                  Tools like Figma
-                </ListParagraph>
-            </ListContainer>
-          </ListItem>
-          <ListItem>
-            <DiFirebase size="3rem"/>
-            <ListContainer>
-                <ListTitle>Backend</ListTitle>
-                <ListParagraph>
-                  Experience with <br/>
-                  Node.js and databases
-                </ListParagraph>
-            </ListContainer>
-          </ListItem>
+          {Technologiesdata.map((tech,id)=>(
+            <ListItem key={id}>
+              {tech.icon}
+              <ListContainer>
+                  <ListTitle>{tech.title}</ListTitle>
+                  <ListParagraph>{tech.text}</ListParagraph>
+              </ListContainer>
+            </ListItem>
+          ))}
       </List>
   </Section>
 );

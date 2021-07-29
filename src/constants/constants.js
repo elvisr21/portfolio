@@ -1,3 +1,6 @@
+import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+
 export const projects = [
   {
     title: 'MERN Memories',
@@ -49,4 +52,13 @@ export const Accomplishmentsdata = [
   { number: 1000, text: 'Students', },
   { number: 1900, text: 'Github Followers', },
   { number: 5000, text: 'Github Stars', }
+];
+export const Technologiesdata=[
+  {title:"Frontend",icon:<DiFirebase size="3rem"/>,text:"Experience with React.js"},
+  {title:"Backend",icon:<DiFirebase size="3rem"/>,text:"Experience with Node.js and databases"},
+  {title:"UI/UX",icon:<DiZend size="3rem"/>,text:"Experience with tools like Figma"}
+];
+export const Socialdata=[
+  {link:"https://github.com/elvisr21",icon:<AiFillGithub size="3rem"/>},
+  {link:"https://linkedin.com/in/elvisr21",icon:<AiFillLinkedin size="3rem"/>}
 ];
