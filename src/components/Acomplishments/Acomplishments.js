@@ -5,17 +5,24 @@ import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 import { Accomplishmentsdata } from '../../constants/constants';
 
 const Acomplishments = () => (
-  <Section>
-    <SectionTitle>Personal Acomplishments</SectionTitle>
-    <Boxes>
-        {Accomplishmentsdata.map((card,index)=>(
-          <Box key={index}>
-            <BoxNum>{card.number}+</BoxNum>
-            <BoxText>{card.text}</BoxText>
-          </Box>
-        ))} 
-    </Boxes>
-  </Section>
+  <>
+  {(Accomplishmentsdata.length!=0) && 
+    <Section>
+          <SectionDivider/>
+          <br/>
+        <SectionTitle>Personal Acomplishments</SectionTitle>
+        <Boxes>
+            {Accomplishmentsdata.map((card,index)=>(
+              <Box key={index}>
+                <BoxNum>{card.number}+</BoxNum>
+                <BoxText>{card.text}</BoxText>
+              </Box>
+            ))} 
+        </Boxes>
+    
+    </Section>
+  }
+  </>
 );
 
 export default Acomplishments;
