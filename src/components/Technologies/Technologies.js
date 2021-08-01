@@ -10,7 +10,8 @@ const Technologies = () =>  (
       <br/>
       <SectionTitle>Technologies</SectionTitle>
       <SectionText>
-          I've worked with a range of technologies in the development world. From Back-end to Design 
+          I've worked with a range of technologies in the 
+          development world. These are some of them.
       </SectionText>
       <List>
           {Technologiesdata.map((tech,id)=>(

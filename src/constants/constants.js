@@ -1,64 +1,73 @@
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import {DiReact } from 'react-icons/di';
+import {FiDatabase} from 'react-icons/fi';
+import {FaCog} from 'react-icons/fa';
+import {SiDatacamp} from 'react-icons/si'
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillCloud, AiFillApi } from 'react-icons/ai';
 
 export const projects = [
   {
-    title: 'MERN Memories',
-    description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-      image: '/images/1.png',
-      tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 0,
+    title:"Content Pipeline",
+    description:"Help SoloSegment with building a content pipeline that will take web page content from clients' websites, analyze those web pages to discover metadata, and prepare it to be indexed with ElasticSearch with Kibana visualization for deeper insights",
+    image:"/images/no-image-available.jpeg",
+    tags:["Node","ElasticSearch","Google Cloud","Kibana","Apache Airflow"],
+    source:"",
+    visit:""
   },
   {
-    title: 'E-Commerce',
-    description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 1,
+    title:"ChefMaster",
+    description:"A community recipe book app that allows users to  add, edit and comment on recipes",
+    image:"/images/no-image-available.jpeg",
+    tags:["React","Flask","Postgres","Heroku","Python"],
+    source:"",
+    visit:"https://github.com/elvisr21/CS490-Project3",
   },
   {
-    title: 'WebRTC App',
-    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-      image: '/images/3.jpg',
-      tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 2,
+    title: 'Tic-Tac-Toe',
+    description: "A React web application that uses sockets to allow users to play tic-tac-toe",
+    image: '/images/no-image-available.jpeg',
+    tags: ['React', 'Flask', 'SocketIO', 'Postgres'],
+    source: '',
+    visit: 'https://github.com/NJIT-CS490-SP21/project2_er236',
   },
   {
-    title: 'Unichat',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 3,
+    title: 'Spotify Song Reviewer',
+    description:"A React web application that uses Genius and Spotify API, to search for songs and show user song a preview",
+    image: '/images/no-image-available.jpeg',
+    tags: ['React', 'Flask',"APIs"],
+    source: '',
+    visit: 'https://github.com/NJIT-CS490-SP21/project1-er236',
   },
+  {
+    title: 'ESport Lookup',
+    description: "A web application that lets users look up ESport teams, and show them team and players stats",
+    image: '/images/no-image-available.jpeg',
+    tags: ['PHP', 'RabbitMQ',"MYSQL","APIs"],
+    source: '',
+    visit: 'https://github.com/elvisr21/IT490-450',
+  }
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  { year: 2021, text: "Graduated from NJIT with a  Bachelor's Degree in Computer Science and Information Technology" },
 ];
 export const Accomplishmentsdata = [
-  { number: 20, text: 'Open Source Projects'},
+  /*{ number: 20, text: 'Open Source Projects'},
   { number: 1000, text: 'Students', },
   { number: 1900, text: 'Github Followers', },
-  { number: 5000, text: 'Github Stars', }
+  { number: 5000, text: 'Github Stars', }*/
 ];
 export const Technologiesdata=[
-  {title:"Frontend",icon:<DiFirebase size="3rem"/>,text:"Experience with React.js"},
-  {title:"Backend",icon:<DiFirebase size="3rem"/>,text:"Experience with Node.js and databases"},
-  {title:"UI/UX",icon:<DiZend size="3rem"/>,text:"Experience with tools like Figma"}
+  {title:"Frontend",icon:<DiReact size="3rem"/>,text:"Experience with HTML/CSS and JavaScript"},
+  {title:"Backend",icon:<FaCog size="3rem"/>,text:"Experience with Node.js and Python"},
+  {title:"Database",icon:<FiDatabase size="3rem"/>,text:"Experience with MYSQL, Postgres, Elasticsearch, Firestore"},
+  {title:"Cloud", icon:<AiFillCloud size="3rem"/>,text:"Experience with Google Cloud, Heroku and AWS"},
+  {title: "Frameworks", icon:<AiFillApi size="3rem"/>,text:"Experience in Flask and React.js"},
+  {title: "Data Science", icon:<SiDatacamp size="3rem"/>,text:"Experience in using Python to visualize data and build machine learning models" }
 ];
 export const Socialdata=[
   {link:"https://github.com/elvisr21",icon:<AiFillGithub size="3rem"/>},
-  {link:"https://linkedin.com/in/elvisr21",icon:<AiFillLinkedin size="3rem"/>}
+  {link:"https://linkedin.com/in/elvisr21",icon:<AiFillLinkedin size="3rem"/>},
+  {link:"",icon:<AiFillInstagram size="3rem"/>}
+
 ];
+export const websiteURL = "";
