@@ -48,6 +48,8 @@ export const projects = [
 ];
 
 export const TimeLineData = [
+  { year:2020, text:"Frontend intern at Up Cancer"},
+  { year:2021, text: "Developer intern at SoloSegment"},
   { year: 2021, text: "Graduated from NJIT with a  Bachelor's Degree in Computer Science and Information Technology" },
 ];
 export const Accomplishmentsdata = [
