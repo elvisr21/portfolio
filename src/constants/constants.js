@@ -7,7 +7,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillCloud, AiFillApi }
 export const projects = [
   {
     title:"Content Pipeline",
-    description:"Help SoloSegment with building a content pipeline that will take web page content from clients' websites, analyze those web pages to discover metadata, and prepare it to be indexed with ElasticSearch with Kibana visualization for deeper insights",
+    description:"Help SoloSegment with building a content pipeline that extract metadata from web pages, and prepare it to be analyzed with Kibana for deeper insights",
     image:"/images/no-image-available.jpeg",
     tags:["Node","ElasticSearch","Google Cloud","Kibana","Apache Airflow"],
     source:"",
