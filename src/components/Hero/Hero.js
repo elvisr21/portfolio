@@ -14,7 +14,8 @@ const Hero = (props) => (
           </SectionTitle>
           <SectionText>
             I'm a NJIT graduate with a dual bachelor's in Computer Science 
-            and Information Technology looking to work as a Software Engineer
+            and Information Technology with experience developing and deploying 
+            full stack applications through aws.
           </SectionText>
           <Button onClick={()=> window.location = websiteURL}>
               Learn More
